@@ -2,54 +2,125 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ポートフォリオ - あなたの名前</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ポートフォリオ</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>あなたの名前</h1>
-    <p>組込み / AI / デバイス開発エンジニア</p>
+    <h1>ポートフォリオ</h1>
   </header>
 
-  <nav>
+  <section class="profile fade-in">
+    <h2>所属</h2>
     <ul>
-      <li><a href="#about">自己紹介</a></li>
-      <li><a href="#projects">プロジェクト</a></li>
-      <li><a href="#skills">スキル</a></li>
-      <li><a href="#contact">連絡先</a></li>
-    </ul>
-  </nav>
-
-  <section id="about">
-    <h2>自己紹介</h2>
-    <p>
-      サーマルカメラを用いたAI研究、組込み開発、ロボコン出場経験など、ソフトとハードの両面で実績があります。
-    </p>
-  </section>
-
-  <section id="projects">
-    <h2>プロジェクト</h2>
-    <ul>
-      <li><strong>サーマル画像による姿勢推定</strong>：独自データセットとPyTorchで高精度化</li>
-      <li><strong>学生ロボコンロボット</strong>：CAN通信ファームと制御基板を担当</li>
-      <li><strong>自作コントローラー</strong>：3DCAD設計、HIDファーム、販売まで対応</li>
+      <li>2018/4~2023/3 一関高専機械技術部</li>
+      <li>2023/4~2024/9 工学院大学ロボットプロジェクト</li>
     </ul>
   </section>
 
-  <section id="skills">
-    <h2>スキル</h2>
-    <p>C/C++、Python、KiCAD、Fusion360、PyTorch、STM32、OpenCV、3Dプリンタなど</p>
+  <section class="works fade-in">
+    <h2>これまで作ったもの(一部)</h2>
+    <h3>クリックすると詳細が表示されます</h3>
+
+        <div class="card">
+      <img src="images/iron.png" alt="高専ロボコン2019" />
+      <div>
+        <h3>高専ロボコン2019出場</h3>
+        <a href="https://www.youtube.com/watch?v=d7L89qnZTic" target="_blank">動画を見る</a>
+        <p class="card-detail">手動ロボット"あい"の回路設計と制御を行いました</p>
+      </div>
+    </div>
+
+        <div class="card">
+      <img src="images/SIFAC.avif" alt="スクフェスコントローラ" />
+      <div>
+        <h3>スクフェスコントローラの自作</h3>
+        <a href="https://www.youtube.com/watch?v=ZyPWyqhBEGY" target="_blank">動画を見る</a>
+        <a href="https://qiita.com/RikuWorks/items/7fd39a44b2030dcf79c0" target="_blank">記事を読む</a>
+        <p class="card-detail">Androidエミュで動作します</p>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="images/Rina.png" alt="自作ガジェット" />
+      <div>
+        <h3>自作ガジェットの開発</h3>
+        <p class="card-detail">個人の趣味として，電子工作・マイコン制御を活用した様々なガジェットを制作．</p>
+      </div>
+    </div>
+
+        <div class="card">
+      <img src="images/SIFAC.png" alt="スクフェスコントローラ" />
+      <div>
+        <h3>PS向けスクフェスコントローラの自作</h3>
+        <p class="card-detail">PS向けのスクフェスで動作します</p>
+      </div>
+    </div>
+    
+
+    <div class="card">
+      <img src="images/Zone.png" alt="壁のぼりロボット" />
+      <div>
+        <h3>壁のぼりロボットの開発</h3>
+        <a href="https://youtube.com/watch?v=bZzob9i29KE" target="_blank">動画を見る</a>
+        <p class="card-detail">二重反転プロペラを用いて垂直面を登れるロボットを開発しました．</p>
+      </div>
+    </div>
+
+        <div class="card">
+      <img src="images/Artemis.png" alt="高専ロボコン2022" />
+      <div>
+        <h3>高専ロボコン2022出場</h3>
+        <a href="https://www.youtube.com/watch?v=QeYSTfqzdxk" target="_blank">動画を見る</a>
+        <p class="card-detail">紙飛行機発射ロボットArtemisの制御を行いました</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/CANMD.png" alt="CANモータドライバ" />
+      <div>
+        <h3>CANモータドライバの設計</h3>
+        <p class="card-detail">STM32とCAN通信を使用し，複数モーター制御を実現するDCモータドライバ基板を開発．</p>
+      </div>
+    </div>
+
+
+
+
+
+        <div class="card">
+      <img src="images/Aipri.png" alt="ゲームコントローラ" />
+      <div>
+        <h3>某アーケードゲーム風コントローラの自作</h3>
+        <a href="https://youtube.com/shorts/RjVqtaP4tGk" target="_blank">動画を見る</a>
+        <p class="card-detail">某アーケードゲーム風のコントローラを自作しました</p>
+      </div>
+    </div>
+
+
+
+    <div class="card">
+      <img src="images/ThermalPose.gif" alt="ThermalPoseEstimation v2" />
+      <div>
+        <h3>サーマルカメラを用いた姿勢推定に関する研究</h3>
+        <p class="card-detail">近年，姿勢推定技術は動作解析が必要とされる多くの分野で注目されているが，可視光カメラは低照度環境に弱く，LiDARは健康への影響が懸念される．これに対し，サーマルカメラは光源を必要とせず，比較的低コストかつ安定した動作が可能であるため，本研究ではサーマルカメラを用いた姿勢推定に注目する．<br>サーマルカメラの利点として，暗所や逆光環境でも安定した解析が可能であり，プライバシー保護にも優れている点が挙げられる．そのため，高齢者施設での転倒検知や監視システムへの応用が期待される．一方で，サーマル画像には解像度の低さや温度差によるノイズ，既存モデルとの互換性の問題などの課題がある．これらを踏まえ，本研究ではサーマル画像に適した高精度な姿勢推定手法の開発を目指した．</p>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>連絡先</h2>
-    <p>メール: your.email@example.com</p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
+  <section class="profile fade-in">
+    <h2>資格</h2>
+    <ul>
+      <li>第一種普通自動車免許</li>
+      <li>基本情報技術者</li>
+    </ul>
   </section>
 
   <footer>
-    <p>&copy; 2025 あなたの名前</p>
+    <p>© 2025 motomochi</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
